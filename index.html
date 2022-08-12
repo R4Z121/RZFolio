@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/icons/fa-css/all.min.css">
+	<link rel="stylesheet" href="./assets/icons/fa-css/fontawesome.min.css">
+    <script defer src="./assets/scripts/app.js"></script>
+    <title>ZFolio</title>
+</head>
+<body>
+    <header>
+        <nav class="flex flex-wrap jc-space-between w-100">
+            <section class="nav-brand pd-20">
+                <h1 class="brand-title">RZ121</h1>
+            </section>
+            <section class="burger" onclick="openNav()">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </section>
+            <ul class="nav-list-group pd-30 flex jc-space-evenly ai-center">
+                <li class="nav-list"><a id ="home" class="nav-link scroll-link">Home</a></li>
+                <li class="nav-list"><a id ="about" class="nav-link scroll-link">About</a></li>
+                <li class="nav-list"><a id ="skills" class="nav-link scroll-link">Skills</a></li>
+                <li class="nav-list"><a id="projects" class="nav-link scroll-link">Projects</a></li>
+                <li class="nav-list"><a id="contact" class="nav-link scroll-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex flex-column w-100">
+        <section class="home flex flex-wrap jc-center" id="home">
+            <img class="home-image" src="../assets/img/jumbo-image.png" alt="home-image" draggable="false">
+            <div class="home-content">
+                <h1 class="home-title">Hi, I am Z !!!</h1>
+                <h3 class="home-subtitle">Frontend Developer</h3>
+                <p class="home-description">Medium level experience in web design and development knowledge, producing quality work.</p>
+                <p class="button scroll-link flex col-gap-3 ai-center" id="about"><svg class="person-symbol" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 50 50"><path d="M24 23.95Q20.7 23.95 18.6 21.85Q16.5 19.75 16.5 16.45Q16.5 13.15 18.6 11.05Q20.7 8.95 24 8.95Q27.3 8.95 29.4 11.05Q31.5 13.15 31.5 16.45Q31.5 19.75 29.4 21.85Q27.3 23.95 24 23.95ZM8 40V35.3Q8 33.4 8.95 32.05Q9.9 30.7 11.4 30Q14.75 28.5 17.825 27.75Q20.9 27 24 27Q27.1 27 30.15 27.775Q33.2 28.55 36.55 30Q38.1 30.7 39.05 32.05Q40 33.4 40 35.3V40ZM11 37H37V35.3Q37 34.5 36.525 33.775Q36.05 33.05 35.35 32.7Q32.15 31.15 29.5 30.575Q26.85 30 24 30Q21.15 30 18.45 30.575Q15.75 31.15 12.6 32.7Q11.9 33.05 11.45 33.775Q11 34.5 11 35.3ZM24 20.95Q25.95 20.95 27.225 19.675Q28.5 18.4 28.5 16.45Q28.5 14.5 27.225 13.225Q25.95 11.95 24 11.95Q22.05 11.95 20.775 13.225Q19.5 14.5 19.5 16.45Q19.5 18.4 20.775 19.675Q22.05 20.95 24 20.95ZM24 16.45Q24 16.45 24 16.45Q24 16.45 24 16.45Q24 16.45 24 16.45Q24 16.45 24 16.45Q24 16.45 24 16.45Q24 16.45 24 16.45Q24 16.45 24 16.45Q24 16.45 24 16.45ZM24 37Q24 37 24 37Q24 37 24 37Q24 37 24 37Q24 37 24 37Q24 37 24 37Q24 37 24 37Q24 37 24 37Q24 37 24 37Z"/></svg>More About Me</p>
+            </div>
+        </section>
+        <section class="profile flex flex-column min-height-100" id="about">
+            <div class="section-title w-100 flex flex-column ai-center">
+                <span class="section-title-text flex flex-column ai-center">
+                    <h1>About Me</h1>
+                </span>
+            </div>
+            <div class="section-content flex flex-wrap pd-20 w-100 jc-space-evenly">
+                <div class="profile-image-container flex jc-center">
+                    <img src="../assets/img/profile-image.png" alt="profile-picture" class="profile-image">
+                </div>
+                <aside class="profile-description pd-20">
+                    <h2 class="profile-title">Hi, I'm M. Rizky Azizi, based in Indonesia</h2>
+                    <p class="description">Student of Informatic Engineering in Sriwijaya University since 2019, front-end web developer with extensive knowledge and years of experience, working in web technologies, delivering quality work.</p>
+                    <div class="card-container profile-card w-100 flex flex-wrap">
+                        <div class="small-card w-100 flex flex-column ai-center jc-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 50 50"><path d="M19.25 27.4 21.05 21.65 16.3 17.95H22.1L24 12L25.85 17.95H31.7L26.95 21.65L28.7 27.4L24 23.85ZM12.2 46V30.8Q9.95 28.45 8.975 25.65Q8 22.85 8 20Q8 13.2 12.6 8.6Q17.2 4 24 4Q30.8 4 35.4 8.6Q40 13.2 40 20Q40 22.85 39.025 25.65Q38.05 28.45 35.8 30.8V46L24 42.05ZM24 33Q29.45 33 33.225 29.225Q37 25.45 37 20Q37 14.55 33.225 10.775Q29.45 7 24 7Q18.55 7 14.775 10.775Q11 14.55 11 20Q11 25.45 14.775 29.225Q18.55 33 24 33ZM15.2 41.8 24 39.05 32.8 41.8V33.25Q30.8 34.7 28.5 35.35Q26.2 36 24 36Q21.8 36 19.5 35.35Q17.2 34.7 15.2 33.25ZM24 37.5Q24 37.5 24 37.5Q24 37.5 24 37.5Q24 37.5 24 37.5Q24 37.5 24 37.5Z"/></svg>
+                            <p class="small-card-title">Experiences</p>
+                            <p class="small-card-description">2+ years</p>
+                        </div>
+                        <div class="small-card w-100 flex flex-column ai-center jc-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 50 50"><path d="M16.5 11.55V7Q16.5 5.8 17.4 4.9Q18.3 4 19.5 4H28.5Q29.7 4 30.6 4.9Q31.5 5.8 31.5 7V11.55H41Q42.2 11.55 43.1 12.45Q44 13.35 44 14.55V39Q44 40.2 43.1 41.1Q42.2 42 41 42H7Q5.8 42 4.9 41.1Q4 40.2 4 39V14.55Q4 13.35 4.9 12.45Q5.8 11.55 7 11.55ZM19.5 11.55H28.5V7Q28.5 7 28.5 7Q28.5 7 28.5 7H19.5Q19.5 7 19.5 7Q19.5 7 19.5 7ZM41 29.45H28.55V32.45H19.55V29.45H7V39Q7 39 7 39Q7 39 7 39H41Q41 39 41 39Q41 39 41 39ZM22.55 29.45H25.55V26.45H22.55ZM7 26.45H19.55V23.45H28.55V26.45H41V14.55Q41 14.55 41 14.55Q41 14.55 41 14.55H7Q7 14.55 7 14.55Q7 14.55 7 14.55ZM24 27.95Q24 27.95 24 27.95Q24 27.95 24 27.95Q24 27.95 24 27.95Q24 27.95 24 27.95Q24 27.95 24 27.95Q24 27.95 24 27.95Q24 27.95 24 27.95Q24 27.95 24 27.95Z"/></svg>
+                            <p class="small-card-title">Completed</p>
+                            <p class="small-card-description">5+ projects</p>
+                        </div>
+                    </div>
+                    <p class="button scroll-link profile-btn flex ai-center col-gap-3" id="contact"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 50 50"><path d="M6 40V8L44 24ZM9 35.35 36.2 24 9 12.5V20.9L21.1 24L9 27ZM9 35.35V24V12.5V20.9V27Z"/></svg>Contact Me</p>
+                </aside>
+            </div>
+        </section>
+        <section class="skills flex flex-column ai-center min-height-100" id="skills">
+            <div class="section-title w-100 flex flex-column ai-center">
+                <span class="section-title-text flex flex-column ai-center">
+                    <h1>My Abilities</h1>
+                </span>
+            </div>
+            <div class="card-container skill-container flex jc-center flex-wrap">
+                <div class="small-card w-100 flex flex-column ai-center jc-center pd-10">
+                    <img src="../assets/img/skills/html-logo.png" alt="skill-logo" class="small-card-image">
+                    <h2 class="small-card-title">HTML</h2>
+                </div>
+                <div class="small-card w-100 flex flex-column ai-center jc-center">
+                    <img src="../assets/img/skills/css-logo.png" alt="skill-logo" class="small-card-image">
+                    <h2 class="small-card-title">CSS</h2>
+                </div>
+                <div class="small-card w-100 flex flex-column ai-center jc-center">
+                    <img src="../assets/img/skills/javascript-logo.png" alt="skill-logo" class="small-card-image">
+                    <h2 class="small-card-title">Javascript</h2>
+                </div>
+                <div class="small-card w-100 flex flex-column ai-center jc-center">
+                    <img src="../assets/img/skills/bootstrap-logo.png" alt="skill-logo" class="small-card-image">
+                    <h2 class="small-card-title">Bootstrap</h2>
+                </div>
+                <div class="small-card w-100 flex flex-column ai-center jc-center">
+                    <img src="../assets/img/skills/tailwind-logo.png" alt="skill-logo" class="small-card-image">
+                    <h2 class="small-card-title">Tailwind</h2>
+                </div>
+                <div class="small-card w-100 flex flex-column ai-center jc-center">
+                    <img src="../assets/img/skills/github-logo.png" alt="skill-logo" class="small-card-image">
+                    <h2 class="small-card-title">Github</h2>
+                </div>
+            </div>
+            <div class="slider w-100 pd-20 jc-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" class="left-slider"><path d="M28.05 36 16 23.95 28.05 11.9 30.2 14.05 20.3 23.95 30.2 33.85Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" class="right-slider"><path d="M18.75 36 16.6 33.85 26.5 23.95 16.6 14.05 18.75 11.9 30.8 23.95Z"/></svg>
+            </div>
+        </section>
+        <section class="projects flex flex-column ai-center min-height-100" id="projects">
+            <div class="section-title w-100 flex flex-column ai-center">
+                <span class="section-title-text flex flex-column ai-center">
+                    <h1>Latest Projects</h1>
+                </span>
+            </div>
+            <div class="card-container projects-container flex jc-center flex-wrap">
+                <article class="text-card project-card flex flex-column">
+                    <h1 class="text-card-title">PadiPedia</h1>
+                    <p class="text-card-description">Find out what kinds of pests that attacking your rice plants !!!</p>
+                    <p class="text-card-note">Technologies : HTML, CSS, Javascript</p>
+                    <a href="#" class="article-card-link">See More</a>
+                </article>
+                <article class="text-card project-card flex flex-column">
+                    <h1 class="text-card-title">Webshowcase</h1>
+                    <p class="text-card-description">Show your website project, or get your website design inspiration from all people in the world !!!</p>
+                    <p class="text-card-note">Technologies : HTML, CSS, Javascript, Codeigniter3</p>
+                    <a href="#" class="article-card-link">See More</a>
+                </article>
+                <article class="text-card project-card flex flex-column">
+                    <h1 class="text-card-title">Infination Regular B</h1>
+                    <p class="text-card-description">A website to manage data (member, schedule, reminder) of Infination Regular B class in Informatic Engineering, Sriwijaya University.</p>
+                    <p class="text-card-note">Technologies : HTML, CSS, Javascript, PHP</p>
+                    <a href="#" class="article-card-link">See More</a>
+                </article>
+            </div>
+        </section>
+        <section class="contact flex flex-wrap jc-space-between min-height-100 pd-30" id="contact">
+            <div class="contact-info flex flex-column pd-30">
+                <h3 class="contact-title">Contact me</h3>
+                <ul class="contact-info-list flex flex-column">
+                    <li class="flex ai-center">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="info-address">
+                            <p>Pangeran Ayin Street</p>
+                            <strong>Palembang, Indonesia</strong>
+                        </div>
+                    </li>
+                    <li class="flex ai-center">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+62 896 30375105</p>
+                    </li>
+                    <li class="flex ai-center">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>m.rizkyazizi@gmail.com</p>
+                    </li>
+                </ul>
+                <div class="social-media flex w-100">
+                    <div class="card-logo flex jc-center ai-center round">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="card-logo flex jc-center ai-center round">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="card-logo flex jc-center ai-center round">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="message flex flex-column pd-30">
+                <h3 class="contact-title">Send me a message</h3>
+                <form class="message-form flex flex-column">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                    <label for="message-text">Message</label>
+                    <textarea name="message-text" id="message-text"></textarea>
+                    <button type="button" class="button contact-button">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="flex jc-center ai-center">
+        <h6>Copyright &copy; 2022 All rights reserved</h6>
+    </footer>
+</body>
+</html>
